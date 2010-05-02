@@ -27,6 +27,14 @@ public class Censor {
 	 * @return the censored input string
 	 */
 	public String censor(String input) {
+		/*
+		 * NOTE: We used to compare the value of 'input' with the
+		 * blacklisted string, but that allowed attackers to sneak
+		 * the blacklisted value through by padding it with non-Roman
+		 * digits: e.g. "aXLIIb". Now the blacklisted value is
+		 * deleted, leaving only the non-Roman digits, which are
+		 * ignored by the Oracle.
+		 */
 		return input.replace(blacklistedQuestion, "");
 	}
 }
