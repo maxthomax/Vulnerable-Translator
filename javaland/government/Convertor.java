@@ -6,16 +6,16 @@
  * 
  * Values for blocks are computed by multiplying the row heading
  * with the column heading of the cell in which the block is found:
- * 		*1		*10		*100	*1000
- * 1	I		X		C		M
- * 2	II		XX		CC
- * 3	III		XXX		CCC
- * 4	IV		XL		CD
- * 5	V		L		D
- * 6	VI		LX		DC
- * 7	VII		LXX		DCC
- * 8	VIII	LXXX	DCCC
- * 9	IX		XC		CM
+ *      *1   *10  *100  *1000
+ * 1     I     X     C      M
+ * 2    II    XX    CC     MM
+ * 3   III   XXX   CCC    MMM
+ * 4    IV    XL    CD   MMMM
+ * 5     V     L     D  MMMMM
+ * 6    VI    LX    DC    ...
+ * 7   VII   LXX   DCC
+ * 8  VIII  LXXX  DCCC
+ * 9    IX    XC    CM
  * 
  * Example:
  * MMIX = M + M + IX = 1000 + 1000 + 9 = 2009
@@ -25,7 +25,7 @@ package javaland.government;
 
 /**
  * @author Thomas Herlea
- * @date 2009-05-30
+ * @date 2010-05-02
  */
 public class Convertor {
 	/**
