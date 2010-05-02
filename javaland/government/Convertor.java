@@ -133,7 +133,6 @@ public class Convertor {
 					}
 				}
 				partialSum += symbolValue;
-//				System.out.println("" + symbol + '-' + symbolValue + '-' + partialSum);
 			}
 		}
 		return partialSum;
