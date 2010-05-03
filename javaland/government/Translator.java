@@ -38,18 +38,17 @@ public class Translator {
 
 		do {
 			try {
-				System.out.print("Name: ");
-				System.out.flush();
+				System.err.print("Name: ");
+				System.err.flush();
 				name = reader.readLine();
 				
-				System.out.print("Question (ONLY Roman numerals!): ");
-				System.out.flush();
+				System.err.print("Question (ONLY Roman numerals!): ");
+				System.err.flush();
 				question = reader.readLine();
 
-				// we display to System.err, so it can be piped to the Oracle,
-				// while the questions stay visible to the user
-				System.err.println(name + ", your question was "
-						+ this.process(question));
+				System.out.print(name + ", your question was "
+						+ this.process(question) + "\n");
+				System.out.flush();
 			} catch (java.io.IOException e) {
 				e.printStackTrace();
 			}
