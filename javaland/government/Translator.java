@@ -49,7 +49,11 @@ public class Translator {
 				System.out.print(name + ", your question was "
 						+ this.process(question) + "\n");
 				System.out.flush();
+
+				Thread.sleep(1000);
 			} catch (java.io.IOException e) {
+				e.printStackTrace();
+			} catch (java.lang.InterruptedException e) {
 				e.printStackTrace();
 			}
 		} while ( ! "".equals(name));
