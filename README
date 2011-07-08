@@ -3,17 +3,22 @@ to experience "hacking" in a harmless way.
 
 This directory contains the installation kit of Vulnerable Translator.
 
-See the file INSTALL for installation instructions.
-
 Purpose of the subdirectories:
-basedir/        - invariant internal part of the web app
-custom/         - custom part of the web app
-docdir/         - invariant interface part of the web app
-documentation/  - project documentation
-examples/       - example variant parts for the web app
-tmp/            - intermediate states of the web app
-tools/          - installation scripts
+javaland/       - source directory
+COPYING         - the license
+README          - this file
 
+The binaries can be built with the following command:
+javac javaland/government/Censor.java javaland/government/Convertor.java javaland/government/Translator.java javaland/philosophers/Oracle.java
+
+To launch in oracle mode:
+java javaland.philosophers.Oracle
+
+To launch in translated oracle mode:
+java javaland.government.Translator | java javaland.philosophers.Oracle
+
+To launch in translator mode only:
+java javaland.government.Translator
 
 Copyright (C) 2009, 2010, 2011 Thomas Herlea
 
