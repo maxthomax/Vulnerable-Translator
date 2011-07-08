@@ -1,0 +1,20 @@
+Vulnerable Translator is an educational application that allows anyone
+to experience "hacking" in a harmless way.
+
+This directory contains the installation kit of Vulnerable Translator.
+
+See the file INSTALL for installation instructions.
+
+Purpose of the subdirectories:
+basedir/        - invariant internal part of the web app
+custom/         - custom part of the web app
+docdir/         - invariant interface part of the web app
+documentation/  - project documentation
+examples/       - example variant parts for the web app
+tmp/            - intermediate states of the web app
+tools/          - installation scripts
+
+
+Copyright (C) 2009, 2010, 2011 Thomas Herlea
+
+This package is under the license found in the file COPYING.
